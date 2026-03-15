@@ -7,7 +7,7 @@ class Auths < Formula
   on_macos do
     on_arm do
       url "https://github.com/auths-dev/auths/releases/download/v#{version}/auths-macos-aarch64.tar.gz"
-      sha256 "8c8ad573edaf4787241629eee01108c79448cc49b5141956f18f320d63e7feaf"
+      sha256 "b06aae2b9c9c43e3bcb496e3eb2eda2e7767a981fd7a22baa53c3c574a93e91a"
     end
   end
 
@@ -18,7 +18,7 @@ class Auths < Formula
     end
     on_arm do
       url "https://github.com/auths-dev/auths/releases/download/v#{version}/auths-linux-aarch64.tar.gz"
-      sha256 "b06aae2b9c9c43e3bcb496e3eb2eda2e7767a981fd7a22baa53c3c574a93e91a"
+      sha256 "8c8ad573edaf4787241629eee01108c79448cc49b5141956f18f320d63e7feaf"
     end
   end
 
