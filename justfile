@@ -10,7 +10,7 @@ update VERSION:
     set -euo pipefail
 
     VERSION="{{VERSION}}"
-    BASE="https://github.com/bordumb/auths-releases/releases/download/v${VERSION}"
+    BASE="https://github.com/auths-dev/auths/releases/download/v${VERSION}"
     FORMULA="Formula/auths.rb"
 
     if [ ! -f "$FORMULA" ]; then
@@ -74,7 +74,7 @@ update VERSION:
 
 # Audit the formula (same check CI runs).
 audit:
-    brew audit --strict --online bordumb/auths-cli/auths
+    brew audit --strict --online auths-dev/auths-cli/auths
 
 # Install from local formula, smoke-test, then uninstall.
 test: audit

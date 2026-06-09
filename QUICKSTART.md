@@ -18,14 +18,14 @@ Get started with cryptographically signed Git commits using KERI-based decentral
 ### macOS / Linux
 
 ```bash
-brew tap bordumb/auths-cli
+brew tap auths-dev/auths-cli
 brew install auths
 ```
 
 ### From Source
 
 ```bash
-cargo install --git https://github.com/bordumb/auths.git auths_cli
+cargo install --git https://github.com/auths-dev/auths.git auths_cli
 ```
 
 Verify installation:
@@ -150,9 +150,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: bordumb/auths-verify-action@v1
+      - uses: auths-dev/verify@v1
         with:
-          allowed-signers: '.auths/allowed_signers'
+          auths-version: '0.1.1'   # pin the CLI — the action never resolves `latest`
+          identity-bundle: '.auths/ci-bundle.json'
 ```
 
 Commit and push:
@@ -193,7 +194,7 @@ auths device revoke --device-did did:key:z6Mk...
 
 ### Learn More
 
-- [Auths Documentation](https://github.com/bordumb/auths)
+- [Auths Documentation](https://github.com/auths-dev/auths)
 - [GitHub Action for Verification](https://github.com/marketplace/actions/auths-verify-commits)
 - [Full Setup Guide](./SETUP_GUIDE.md)
 
@@ -251,6 +252,6 @@ You've learned to:
 **No central server. No blockchain. Just Git and cryptography.**
 
 For deeper dives, see:
-- [Auths Repository](https://github.com/bordumb/auths)
-- [Architecture Documentation](https://github.com/bordumb/auths/blob/main/ARCHITECTURE.md)
+- [Auths Repository](https://github.com/auths-dev/auths)
+- [Architecture Documentation](https://github.com/auths-dev/auths/blob/main/ARCHITECTURE.md)
 - [GitHub Action](https://github.com/marketplace/actions/auths-verify-commits)

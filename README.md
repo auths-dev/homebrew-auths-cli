@@ -1,17 +1,17 @@
 # Homebrew Tap for Auths
 
-Official Homebrew tap for [Auths](https://github.com/bordumb/auths) - Git-native identity and access management.
+Official Homebrew tap for [Auths](https://github.com/auths-dev/auths) - Git-native identity and access management.
 
 ## Installation
 
 ```sh
-brew install bordumb/auths-cli/auths
+brew install auths-dev/auths-cli/auths
 ```
 
 Or tap first, then install:
 
 ```sh
-brew tap bordumb/auths-cli
+brew tap auths-dev/auths-cli
 brew install auths
 ```
 
